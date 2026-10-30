@@ -1,12 +1,10 @@
-# Jobb4kevin v57
+# Jobb4kevin v58
 
-Bygger vidare på v56.
+Felsökning av originaldokument på iPhone:
+- Alla fyra originaldokument är med i static/.
+- Originalknappar använder nu direkta statiska filadresser i samma flik i stället för särskilda dokument-endpoints och nya flikar.
+- Word-länkar saknar HTML download-attribut för bättre kompatibilitet med iOS filvisning.
+- De gamla /documents/...-adresserna finns kvar som alternativ.
+- Ingen ändring av CV/brev-innehåll eller jobbflöde.
 
-- Ny ren Jobb4kevin-rubrik: NO MORE CLOWN och KING-logotypen är borttagna.
-- Original-CV och godkänt personligt brev levereras via separata dokumentadresser `/documents/cv/pdf`, `/documents/cv/word`, `/documents/brev/pdf`, `/documents/brev/word`.
-- PDF visas i webbläsaren; Word hämtas som riktig DOCX.
-- CV-dokumentet är den tidigare godkända ensidiga versionen utan körkortsuppgift.
-- Jobbanpassade dokument och jobbflöde från v56 är oförändrade.
-- Sökcachen har ny versionsnyckel. Avböjningar och ansökningshistorik behålls i webbläsaren.
-
-Publicera på samma Render-tjänst som tidigare.
+Efter publicering, testa direktadresserna /static/Kevin_Martini_CV.pdf och /static/Kevins_personliga_brev.pdf.
